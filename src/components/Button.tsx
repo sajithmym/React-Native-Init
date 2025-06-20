@@ -16,6 +16,7 @@ const Button: React.FC<ButtonProps> = ({
   variant = "primary",
   disabled = false,
   loading = false,
+  sajith = false, // This prop is not used in the component but included for type compatibility
 }) => {
   const getButtonStyle = (): ViewStyle[] => {
     const baseStyle: ViewStyle[] = [styles.button];
