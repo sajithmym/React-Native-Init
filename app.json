@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "Expo React Native Project",
+    "slug": "expo-react-native-project",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "extra": {
+      "eas": {
+        "projectId": "fcbc880a-44b1-4525-b562-cd449c6db321"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.sajithmym.exporeactnativeproject",
+      "buildNumber": "1.0.0",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.sajithmym.exporeactnativeproject",
+      "versionCode": 1
+    }
+  }
+}

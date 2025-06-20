@@ -1,17 +1,17 @@
-import React from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import Button from '../components/Button';
-import Card from '../components/Card';
-import Header from '../components/Header';
-import { SETTINGS } from '../settings';
-import { NavigationProps, User } from '../types';
+import React from "react";
+import { View, Text, StyleSheet, Image } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import Button from "../components/Button";
+import Card from "../components/Card";
+import Header from "../components/Header";
+import { SETTINGS } from "../settings";
+import { NavigationProps, User } from "../types";
 
 const ProfileScreen: React.FC<NavigationProps> = ({ navigation }) => {
   const user: User = {
-    id: '1',
-    name: 'John Doe',
-    email: 'john.doe@example.com',
+    id: "1",
+    name: "Sajithmym",
+    email: "Sajithmym@gmail.com",
   };
 
   const handleGoBack = () => {
@@ -20,14 +20,14 @@ const ProfileScreen: React.FC<NavigationProps> = ({ navigation }) => {
 
   const handleEditProfile = () => {
     // Handle edit profile action
-    console.log('Edit profile pressed');
+    console.log("Edit profile pressed");
   };
 
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.content}>
         <Header title="User Profile" />
-        
+
         <Card title="Profile Information">
           <View style={styles.profileContainer}>
             <View style={styles.avatarContainer}>
@@ -37,7 +37,7 @@ const ProfileScreen: React.FC<NavigationProps> = ({ navigation }) => {
                 </Text>
               </View>
             </View>
-            
+
             <View style={styles.userInfo}>
               <Text style={styles.userName}>{user.name}</Text>
               <Text style={styles.userEmail}>{user.email}</Text>
@@ -59,11 +59,7 @@ const ProfileScreen: React.FC<NavigationProps> = ({ navigation }) => {
             onPress={handleEditProfile}
             variant="primary"
           />
-          <Button
-            title="Go Back"
-            onPress={handleGoBack}
-            variant="outline"
-          />
+          <Button title="Go Back" onPress={handleGoBack} variant="outline" />
         </View>
       </View>
     </SafeAreaView>
@@ -80,7 +76,7 @@ const styles = StyleSheet.create({
     padding: SETTINGS.SPACING.MD,
   },
   profileContainer: {
-    alignItems: 'center',
+    alignItems: "center",
   },
   avatarContainer: {
     marginBottom: SETTINGS.SPACING.MD,
@@ -90,8 +86,8 @@ const styles = StyleSheet.create({
     height: 80,
     borderRadius: 40,
     backgroundColor: SETTINGS.COLORS.PRIMARY,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
   },
   avatarText: {
     fontSize: SETTINGS.TYPOGRAPHY.SIZES.XL,
@@ -99,7 +95,7 @@ const styles = StyleSheet.create({
     color: SETTINGS.COLORS.TEXT.LIGHT,
   },
   userInfo: {
-    alignItems: 'center',
+    alignItems: "center",
   },
   userName: {
     fontSize: SETTINGS.TYPOGRAPHY.SIZES.LG,
